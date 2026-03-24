@@ -1,0 +1,36 @@
+#container {
+    display: flex;
+    justify-content: space-around; /* Chia đều khoảng cách 2 bên */
+    margin-top: 50px;
+}
+
+#pieces-area {
+    display: flex;
+    flex-wrap: wrap; /* Nếu nhiều hình sẽ tự rớt dòng */
+    width: 40%;
+    border: 2px dashed #ccc;
+    padding: 10px;
+}
+
+#card {
+    width: 40%;
+    min-height: 300px;
+    border: 3px solid #333; /* Khung của card to */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+
+.piece {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer; /* Đổi con trỏ thành hình bàn tay để báo hiệu click được */
+    transition: transform 0.2s;
+}
+
+.piece:hover {
+    transform: scale(1.1); /* Phóng to nhẹ khi di chuột vào */
+}
