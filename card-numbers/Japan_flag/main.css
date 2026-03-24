@@ -1,0 +1,27 @@
+body{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+#flag {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    
+    /* Bật Flexbox để quản lý vòng tròn đỏ */
+    display: flex;
+    
+    /* Lệnh căn giữa theo trục chính (chiều ngang): */
+    justify-content: center;
+    
+    /* Lệnh căn giữa theo trục phụ (chiều dọc): */
+    align-items: center;
+}
+#red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    
+    /* Biến hình thành hình tròn */
+    border-radius: 50%;
+}
